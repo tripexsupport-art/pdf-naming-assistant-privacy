@@ -8,8 +8,8 @@
 </head>
 <body><main>
 <h1>PDF Naming Assistant — Privacy Notice</h1>
-<p>Last updated: October 16, 2026</p>
-<aside>This notice describes the current offline-license version. Any future store-connected activation flow will be disclosed here before release.</aside>
+<p>Last updated: October 17, 2026</p>
+<aside>This notice covers manual review, optional customer-owned AI connections and Gumroad purchase activation.</aside>
 <h2>Documents and local reviews</h2>
 <p>The application reads PDFs you select and saves review data on your computer. It has no built-in account, telemetry or vendor-hosted AI. Original PDFs remain in place. Exported copies and manifests are written to your chosen destination.</p>
 <p>Reviews can contain original file paths, extracted document text, date excerpts, proposed titles and your decisions. They are not encrypted by the app. Local data is normally stored under <code>%LOCALAPPDATA%\PDFNamingAssistant</code>. The app's Storage &amp; privacy control shows the location.</p>
@@ -19,7 +19,8 @@
 <h2>Local models</h2>
 <p>Local mode connects to a loopback server on your computer. You supply its server software and model files. Those components have their own behavior and licenses.</p>
 <h2>Trial and purchase records</h2>
-<p>The access subfolder contains the trial ledger and any activated signed purchase license. The ledger records export paths, content hashes and outcomes to account for successful or interrupted copies; it does not contain extracted PDF text or API keys. Current signed-file activation is offline and sends no document data. Buying through a storefront is separate and subject to that storefront's privacy and payment policies.</p>
+<p>The access subfolder contains the trial ledger and purchase activation. The ledger records export paths, content hashes and outcomes to account for successful or interrupted copies; it does not contain extracted PDF text or API keys.</p>
+<p>When you confirm Gumroad purchase activation, the app sends your purchase key and this app's product ID to https://api.gumroad.com/v2/licenses/verify. It does not send PDFs, extracted text or AI API keys. Gumroad may return purchase details; this app retains only the purchase key, product ID and sale ID in Windows-encrypted local storage, not returned email or card details. Subsequent normal use works offline without a Gumroad request on every launch. Optional seller-issued signed-file activation is offline. Buying through Gumroad is separate and subject to Gumroad's privacy and payment practices.</p>
 <h2>Deletion and retention</h2>
 <p>Session → Delete this saved review removes that review, not original PDFs, exports, other reviews, trial records, backups or provider-held requests. To remove all local app data, close the app and remove its local storage folder. Remove exports separately from your chosen destinations. Keep the original seller-issued purchase license if you plan to reinstall.</p>
 <h2>Contact</h2>
